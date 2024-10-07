@@ -15,7 +15,7 @@ function getScrollHeight() {
     var scrollPercentage = height / totalHeight;
 
     var startColor = "rgb(255, 255, 255)"; // Blanco
-    var endColor = "rgb(0, 128, 0)"; // Verde
+    var endColor = "rgb(0, 0, 128)"; // Verde
 
     var blendedColor = blendColors(startColor, endColor, scrollPercentage);
     document.body.style.backgroundColor = blendedColor;
