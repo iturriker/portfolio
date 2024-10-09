@@ -7,11 +7,11 @@ header {
     z-index: 100;
     border-bottom-left-radius: 80%;
     border-bottom-right-radius: 80%;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 header:hover {
-    background-color: rgba(45, 176, 236, 0.65);
+    background-color: rgb(45, 175, 236, 0.85);
 }
 
 .header-list {
@@ -42,4 +42,10 @@ header:hover {
 
 .header-list-item a:hover {
     color: rgb(248, 255, 57);
+}
+
+/*Add and Remove by JavaScript*/
+.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
 }

@@ -18,9 +18,9 @@ function navigate(direction) {
 
 function getHeight() {
     if (document.documentElement.scrollTop == 0)
-        {document.getElementById('header').classList.add("prueba");}
+        {document.getElementById('header').classList.remove("hidden");}
     else
-        {document.getElementById('header').style.opacity = "0";}
+        {document.getElementById('header').classList.add("hidden")}
     
     console.log(document.documentElement.scrollTop);
 }
