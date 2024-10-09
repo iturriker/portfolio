@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(45, 176, 236, 0.65);
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(45, 176, 236, 0.65);
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Quita los puntos de la lista */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.header-list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: scale 0.3s ease;
+}
+
+.header-list-item a {
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s ease;
+}
+
+.header-list-item:hover {
+    scale: 1.2;
+}
+
+.header-list-item a:hover {
+    color: rgb(248, 255, 57);
+}

@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(219, 238, 255);
+    font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: larger;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Quita los puntos de la lista */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.link-list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.link-list-item a {
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s ease;
+}
+
+.link-list-item a:hover {
+    color: rgb(248, 255, 57);
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Quita los puntos de la lista */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.social-list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado */
+    transition: transform 0.2s ease;
+}
+
+.social-list-item:hover {
+    transform: scale(1.3);
+}
