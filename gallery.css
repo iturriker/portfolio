@@ -1,6 +1,6 @@
 #image-gallery {
     position: relative;
-    max-width: 50%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
 }
