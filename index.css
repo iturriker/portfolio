@@ -32,11 +32,13 @@ figure {
 
 .link-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style: none; /* Quita los puntos de la lista */
     justify-content: center;
     text-align: center;
     align-items: center;
+    text-wrap: nowrap;
     padding: 0;
 }
 
@@ -86,7 +88,6 @@ figure {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .section-container-list {
