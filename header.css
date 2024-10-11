@@ -40,11 +40,11 @@ header:hover {
     transition: color 0.3s ease;
 }
 
-.header-list-item:hover {
+.header-list-item:hover, .header-list-item:focus {
     scale: 1.15;
 }
 
-.header-list-item a:hover {
+.header-list-item a:hover, .header-list-item a:focus{
     color: rgb(166, 238, 32);
 }
 

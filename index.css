@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
     background-color: rgb(219, 238, 255);
     font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
     font-optical-sizing: auto;
@@ -51,11 +52,11 @@ figure {
     transition: color 0.3s ease;
 }
 
-.link-list-item:hover {
+.link-list-item:hover, .link-list-item:focus {
     scale: 1.15;
 }
 
-.link-list-item a:hover {
+.link-list-item a:hover, .link-list-item a:focus {
     color: rgb(166, 238, 32);
 }
 
@@ -71,7 +72,7 @@ figure {
     transition: background-position 0.5s ease;
 }
 
-.section-title:hover {
+.section-title:hover, .section-title:focus {
     background-position-x: 100%;
 }
 

@@ -1,208 +1,118 @@
-
-:root {
-    /*--border-style: solid; */             /* Habilitar borde */
-    --border-style: hidden;            /* Esconder borde */
-}
-
 html {
     scroll-behavior: smooth;
-    transition: all 3s;
+    background-color: rgb(219, 238, 255);
+    font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: larger;
+    cursor: default;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: white;
     margin: 0;
     padding: 0;
-    transition: background-color 0.1s ease;
-    background-image: url('grass.png'); /* Ruta a la imagen */
-    /*background-size: cover; /* Ajusta la imagen para cubrir todo el área del fondo */
-    /*background-position: center; /* Centra la imagen */
-    /*background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-blend-mode: multiply; /* Modo de mezcla */
-}
-
-header {
-    height: auto;
-    position: sticky;
-    text-align: center;
-    justify-content: center;
-    background-color: #ffffffa5;
-    color: rgb(0, 0, 0);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
 }
 
 main {
-    background-color: #2cdd3a57;
-}
-
-footer {
-    background-color: #e942ff57;
-}
-
-section {
-    margin: 10px;
-    width: 80%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    justify-content: center;
-    background-color: #42d3ff57;
-}
-
-nav {
-    background-color: #3fdff77f;
-    padding: 10px;
-    animation: fadeIn 1s ease-in-out;
-    transition: all 3s;
-}
-
-h1, h2 , h3, h4, h5, h6 {
-    font-family: 'Inconsolata', monospace;
-    font-size: xx-large;
-    animation: fadeIn 1s ease-in-out;
-}
-
-p {
-    font-family: 'Inconsolata', monospace;
-    font-size: x-large;
-    text-align: justify;
-    justify-content: center;
-    margin: 15px;
-}
-
-ul {
-    list-style-type: none; /* Quita los puntos de la lista */
     align-items: center;
+}
+
+figure {
     margin: 0;
     padding: 0;
 }
 
-a {
-    font-family: 'Inconsolata', monospace;
-    color: white;
-    text-decoration: none; /* Quita el subrayado */
-    font-weight: bold;
-}
-
-li {
-    font-family: 'Inconsolata', monospace;
-    color: white;
-    text-decoration: none; /* Quita el subrayado */
-    font-size: x-large;
-    text-align: justify;
-    justify-content: center;
-    margin: 15px;
-}
-
-/* Estilos especificos */
-nav ul {
+.link-list {
     display: flex;
+    flex-direction: row;
+    list-style: none; /* Quita los puntos de la lista */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.link-list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
     transition: scale 0.3s ease;
 }
 
-nav ul li:hover {
-    scale: 1.2;
-}
-
-nav ul li a {
+.link-list-item a {
+    text-decoration: none; /* Quita el subrayado */
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: rgb(248, 255, 57);
+.link-list-item:hover {
+    scale: 1.15;
 }
 
-/* Estilos para las clases */
-div.set {
-    margin: 10px;
+.link-list-item a:hover {
+    color: rgb(166, 238, 32);
 }
 
-div.list {
-    margin: 10px;
+.section-title {
+    margin: auto;
+    text-decoration: none; /* Quita el subrayado */
+    background: linear-gradient(45deg, #0233d1 12.5%, #00f7ff 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
+    background-clip: text;
+    background-size: 200%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    color: transparent;
+    transition: background-position 0.5s ease;
 }
 
-div.set {
+.section-title:hover {
+    background-position-x: 100%;
+}
+
+.info-section {
+    margin-left: 10dvw;
+    margin-right: 10dvw;
+}
+
+.section-container-text-special {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
 }
 
-div.set h2{
-    min-width: max-content;
-    text-align: justify;
+.section-container-list {
+    margin-left: 5dvw;
+    margin-right: 5dvw;
 }
 
-div.list ul li {
-    font-size: x-large;
-    margin: 5px 0;
+.section-text-list {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
 }
 
-/* Estilos para los bordes */
-div.set {
-    border-style: var(--border-style);
-    border-color: rgb(43, 96, 255);
-    border-width: 5px;
-    border-radius: 5px;
+.section-container-list h3 {
+    color: blue;
 }
 
-div.list {
-    border-style: var(--border-style);
-    border-color: rgb(255, 43, 43);
-    border-width: 5px;
-    border-radius: 5px;
+.text-list-item:hover strong{
+    background-position-x: 100%;
 }
 
-h1, h2 , h3, h4, h5, h6 {
-    border-style: var(--border-style);
-    border-color: rgb(43, 255, 244);
-    border-width: 5px;
-    border-radius: 5px;  
-}
-
-nav {
-    border-style: var(--border-style);
-    border-color: rgb(43, 255, 71);
-    border-width: 5px;
-    border-radius: 5px;
-}
-
-p {
-    border-style: var(--border-style);
-    border-color: rgb(213, 255, 43);
-    border-width: 5px;
-    border-radius: 5px;
-}
-
-ul {
-    border-style: var(--border-style);
-    border-color: rgb(251, 43, 255);
-    border-width: 5px;
-    border-radius: 5px;
-}
-
-li {
-    border-style: var(--border-style);
-    border-color: rgb(255, 255, 255);
-    border-width: 5px;
-    border-radius: 5px;
-}
-
-/* Animaciones */
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+strong {
+    margin: auto;
+    background: linear-gradient(45deg, #000000 40%, #c6dc4c 100%);
+    background-clip: text;
+    background-size: 300%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    color: transparent;
+    transition: background-position 0.3s ease;
 }

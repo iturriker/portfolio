@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
-		<meta name="description" content="Descripción de la página"> <!-- Descripción de la página -->
-		<meta name="keywords" content="palabras, clave, para, SEO"> <!-- Palabras clave para motores de búsqueda -->
-		<meta name="author" content="Nombre del autor"> <!-- Autor de la página -->
+		<meta name="description" content="Hi! I am Iker Karkokli, a Business Manager and Software Developer. In this portfolio you will find all my personal info, projects and much more.">
+		<meta name="keywords" content="Iker, Karkokli, Iturrioz, web design, portfolio, responsive, HTML, CSS, JavaScript"> <!-- Palabras clave para motores de búsqueda -->
+		<meta name="author" content="Iker Karkokli Iturrioz">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de vista para dispositivos móviles -->
 
 		<title>Iker Karkokli | Portfolio</title>
+		<link rel="icon" href="Favicon/Oveja.ico">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,8 @@
 		<link rel="stylesheet" href="gallery.css">
 		<link rel="stylesheet" href="footer.css">
 	</head>
+
+	<!--https://fieito.com/wp-content/uploads/2022/12/todo-sobre-la-lana-de-oveja.jpg-->
 
 	<body>
 		<header id="header">
@@ -36,7 +39,7 @@
 		<main>
 			<section id="hero-section">
 				<div class="hero-container-video">
-					<video class="hero-video" autoplay playsinline loop muted src="Videos/Hierba.mp4" type="video/mp4"></video>
+					<video class="hero-video" autoplay playsinline loop muted src="Videos/Hierba.mp4"></video>
 				</div>
 				<div class="hero-container-text">
 					<h1 class="hero-text hero-title">IKER KARKOKLI</h1>
@@ -125,8 +128,11 @@
                 </div>
             </section>
 
-			<section id="image-gallery">
+			<div id="image-gallery">
 				<div class="image-gallery-container">
+					<figure class="image-gallery-item">
+						<img src="Imagenes/Ovejas/Oveja.jpg" alt="">
+					</figure>
 					<figure class="image-gallery-item">
 						<img src="Imagenes/Pajaros/1.jpg" alt="">
 					</figure>
@@ -150,17 +156,17 @@
 					<button class="nav-button prev-button"><span>&#60;</span></button>
 					<button class="nav-button next-button"><span>&#62;</span></button>
 				</nav>
-			</section>
+			</div>
 
-			<section id="video-gallery">
+			<div id="video-gallery">
 				<video controls><source src="Videos/Hierba.mp4" type="video/mp4"></video>
-			</section>
+			</div>
 		</main>
 
 		<footer>
 			<ul class="social-list">
-				<li class="social-list-item"><a href="https://www.linkedin.com/in/iker-karkokli-iturrioz" target="_blank" rel="noopener noreferrer"><img src="Logos/linkedin.png" alt="Enlace a LinkedIn"></a></li>
-				<li class="social-list-item"><a href="https://github.com/iturriker" target="_blank" rel="noopener noreferrer"><img src="Logos/github.png" alt="Enlace a Instagram"></a></li>
+				<li class="social-list-item"><a href="https://www.linkedin.com/in/iker-karkokli-iturrioz" target="_blank" rel="noopener noreferrer"><img src="Logos/linkedin.png" alt="Link to LinkedIn"></a></li>
+				<li class="social-list-item"><a href="https://github.com/iturriker" target="_blank" rel="noopener noreferrer"><img src="Logos/github.png" alt="Link to GitHub"></a></li>		
 			</ul>
 			
 			<div>

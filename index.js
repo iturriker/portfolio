@@ -21,8 +21,6 @@ function getHeight() {
         {document.getElementById('header').classList.remove("hidden");}
     else
         {document.getElementById('header').classList.add("hidden")}
-    
-    console.log(document.documentElement.scrollTop);
 }
 
 //AUTOPLAY
