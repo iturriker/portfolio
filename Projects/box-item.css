@@ -1,0 +1,28 @@
+.box-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    gap: 5% 5%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.box-list-item {
+    box-shadow: inset 0px 0px 40px rgb(45, 175, 236, 0.85);
+    border-radius: 2%;
+    width: 30%;
+    min-width: 300px;
+}
+
+.box-list-item div{
+    display: inline-block;
+    width: 80%;
+}
+
+.box-list-item img {
+    width: 100%;
+}
