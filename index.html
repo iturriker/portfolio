@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="header.css">
 		<link rel="stylesheet" href="hero.css">
-		<link rel="stylesheet" href="gallery.css">
+		<link rel="stylesheet" href="image-gallery.css">
 		<link rel="stylesheet" href="footer.css">
 	</head>
 
@@ -31,7 +31,7 @@
 
 	<body>
 		<header id="header">
-			<nav>
+			<nav id="header-nav" class="header-nav">
 				<ul class="header-list">
 					<li class="header-list-item"><a href="index.html">KARKO</a></li>
 					<li class="header-list-item"><a href="Projects/projects.html">PROJECTS</a></li>
@@ -41,6 +41,9 @@
 				</ul>
 			</nav>
 		</header>
+
+		<button id="header-button" class="header-button" type="button">
+		</button>
 
 		<main>
 			<section id="hero-section" class="hero-section">
@@ -166,6 +169,7 @@
 
 			<div id="video-gallery" class="video-gallery">
 				<video controls><source src="Videos/Hierba.mp4" type="video/mp4"></video>
+				<!--<iframe src="" frameborder="0" allowfullscreen></iframe>-->
 			</div>
 		</main>
 
@@ -173,6 +177,7 @@
 			<ul class="social-list">
 				<li class="social-list-item"><a href="https://www.linkedin.com/in/iker-karkokli-iturrioz" target="_blank" rel="noopener noreferrer"><img src="Logos/linkedin.png" alt="Link to LinkedIn"></a></li>
 				<li class="social-list-item"><a href="https://github.com/iturriker" target="_blank" rel="noopener noreferrer"><img src="Logos/github.png" alt="Link to GitHub"></a></li>		
+				<li class="social-list-item"><a href="https://codepen.io/Iker-Karkokli-Iturrioz" target="_blank" rel="noopener noreferrer"><img src="https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png" alt="Link to CodePen"></a></li>
 			</ul>
 			
 			<div>
@@ -181,5 +186,6 @@
 		</footer>
 	
 		<script src="index.js"></script>
+		<script src="image-gallery.js"></script>
 	</body>
 </html>

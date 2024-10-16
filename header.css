@@ -1,13 +1,18 @@
 header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-wrap: nowrap;
     position: fixed;
-    top: 0;
     width: 100%;
     height: auto;
     z-index: 100;
     border-bottom-left-radius: 80%;
     border-bottom-right-radius: 80%;
-    box-shadow: inset 0px 10px 40px rgb(45, 175, 236, 0.85),
-    inset 0px -10px 40px rgb(45, 175, 236, 0.85);
+    box-shadow: inset 0px 10px 40px rgb(45, 175, 236, 0.85), inset 0px -10px 40px rgb(45, 175, 236, 0.85);
     transition: box-shadow 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -15,6 +20,35 @@ header:hover {
     box-shadow: inset 0px 25px 40px rgb(45, 175, 236, 1),
     inset 0px -25px 40px rgb(45, 175, 236, 1),
     0px 10px 40px rgb(45, 175, 236, 0.85);
+}
+
+.header-nav {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 3%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("Iconos/lista.png");
+    background-blend-mode: color;
+    background-repeat: none;
+    background-size: cover;
+    z-index: 200;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease, scale 0.3s ease;
+}
+
+.header-button:hover {
+    opacity: 1;
+    scale: 1.1;
 }
 
 .header-list {
@@ -50,7 +84,21 @@ header:hover {
 }
 
 /*Add and Remove by JavaScript*/
-.hidden {
+header.hidden {
     opacity: 0;
     transform: translateY(-100%);
+}
+
+.header-nav.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.header-button.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.header-button.clicked {
+    background-image: url("Iconos/cancelar.png");
 }

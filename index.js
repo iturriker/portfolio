@@ -1,44 +1,60 @@
-//AUTODATE
+// FOOTER AUTODATE
 function getYear() {
     var currentYear = new Date().getFullYear();
     document.getElementById('year').textContent = currentYear;
 }
 
-var currentIndex = 0;
+// HEADER HIDE
 
-function navigate(direction) {
-    const galleryContainer = document.querySelector('.image-gallery-container');
-    const totalImages = document.querySelectorAll('.image-gallery-item').length;
-    
-    currentIndex = (currentIndex + direction + totalImages) % totalImages;
-    const offset = -currentIndex * 100;
-    
-    galleryContainer.style.transform = `translateX(${offset}%)`;
-}
+var scrollValue = 0
 
-function getHeight() {
-    if (document.documentElement.scrollTop == 0)
-        {document.getElementById('header').classList.remove("hidden");}
+function tryShowHeaderNavByScroll() {
+    if (document.documentElement.scrollTop > 0)
+        {
+            document.getElementById('header').classList.add("hidden");
+            document.getElementById('header-button').classList.remove("hidden");
+        }
     else
-        {document.getElementById('header').classList.add("hidden")}
+        {
+            document.getElementById('header').classList.remove("hidden");
+            document.getElementById('header-button').classList.add("hidden");
+        }
+
+    if (scrollValue >= document.documentElement.scrollTop)
+        {
+            document.getElementById('header-button').classList.remove("clicked");
+        }
+    else
+        {
+            document.getElementById('header-button').classList.remove("clicked");
+        }
+
+    scrollValue = document.documentElement.scrollTop; // Actualizamos el valor almacenado al actual
 }
 
-//AUTOPLAY
-var autoplayInterval = 1;
+function clickheaderButton() {
+    if (document.getElementById('header-button').classList.contains("clicked"))
+        {
+            document.getElementById('header-button').classList.remove("clicked")
+        }
+    else
+        {
+            document.getElementById('header-button').classList.add("clicked")
+        }
 
-function startAutoplay(interval) {
-    stopAutoplay();  // Detiene cualquier autoplay anterior para evitar múltiples intervalos.
-    autoplayInterval = setInterval(() => {navigate(1)}, interval);
+    if (document.getElementById('header').classList.contains("hidden"))
+        {
+            document.getElementById('header').classList.remove("hidden")
+        }
+    else
+        {
+            document.getElementById('header').classList.add("hidden")
+        }
+
+    scrollValue = document.documentElement.scrollTop; // Actualizamos el valor almacenado al actual
 }
 
-function stopAutoplay() {
-    clearInterval(autoplayInterval);
-}
-
-getYear();
-startAutoplay(2000);
-window.addEventListener('scroll', getHeight);
-document.querySelector('.prev-button').addEventListener('click', () => {navigate(-1)});
-document.querySelector('.next-button').addEventListener('click', () => {navigate(1)});
-// Detener autoplay cuando el usuario interactúa con los botones de navegación.
-document.querySelectorAll('.nav-button').forEach(button => {button.addEventListener('click', stopAutoplay)});
+window.addEventListener('load', getYear);
+window.addEventListener('scroll', tryShowHeaderNavByScroll);
+document.getElementById('header-button').addEventListener('click', clickheaderButton);
+document.getElementById('header-button').classList.add("hidden");

@@ -3,15 +3,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     align-content: stretch;
-    gap: 5% 5%;
+    gap: 5dvh 5%;
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
 .box-list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
     box-shadow: inset 0px 0px 40px rgb(45, 175, 236, 0.85);
     border-radius: 2%;
     width: 30%;
@@ -25,4 +32,19 @@
 
 .box-list-item img {
     width: 100%;
+    align-self: flex-end;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.box-list-item iframe {
+    width: 100%;
+    height: 250px;
+    align-self: flex-end;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.box-list-item iframe:fullscreen {
+    border-radius: 0;
 }
