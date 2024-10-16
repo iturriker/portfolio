@@ -8,7 +8,7 @@ function getYear() {
 
 var scrollValue = 0
 
-function tryShowHeaderNavByScroll() {
+function handleHeaderScroll() {
     if (document.documentElement.scrollTop > 0)
         {
             document.getElementById('header').classList.add("hidden");
@@ -19,42 +19,28 @@ function tryShowHeaderNavByScroll() {
             document.getElementById('header').classList.remove("hidden");
             document.getElementById('header-button').classList.add("hidden");
         }
-
-    if (scrollValue >= document.documentElement.scrollTop)
-        {
-            document.getElementById('header-button').classList.remove("clicked");
-        }
-    else
-        {
-            document.getElementById('header-button').classList.remove("clicked");
-        }
-
+    
+    document.getElementById('header-button').classList.remove("clicked");
+    document.getElementById('header').classList.remove("opaque");
     scrollValue = document.documentElement.scrollTop; // Actualizamos el valor almacenado al actual
 }
 
-function clickheaderButton() {
+function handleHeaderButtonClick() {
     if (document.getElementById('header-button').classList.contains("clicked"))
         {
-            document.getElementById('header-button').classList.remove("clicked")
+            document.getElementById('header-button').classList.remove("clicked");
+            document.getElementById('header').classList.add("hidden");
+            document.getElementById('header').classList.remove("opaque");
         }
     else
         {
-            document.getElementById('header-button').classList.add("clicked")
+            document.getElementById('header-button').classList.add("clicked");
+            document.getElementById('header').classList.remove("hidden");
+            document.getElementById('header').classList.add("opaque");
         }
-
-    if (document.getElementById('header').classList.contains("hidden"))
-        {
-            document.getElementById('header').classList.remove("hidden")
-        }
-    else
-        {
-            document.getElementById('header').classList.add("hidden")
-        }
-
-    scrollValue = document.documentElement.scrollTop; // Actualizamos el valor almacenado al actual
 }
 
 window.addEventListener('load', getYear);
-window.addEventListener('scroll', tryShowHeaderNavByScroll);
-document.getElementById('header-button').addEventListener('click', clickheaderButton);
+window.addEventListener('scroll', handleHeaderScroll);
+document.getElementById('header-button').addEventListener('click', handleHeaderButtonClick);
 document.getElementById('header-button').classList.add("hidden");
