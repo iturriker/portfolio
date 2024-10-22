@@ -17,7 +17,3 @@ The goal of this portfolio is to showcase my experience in web development, desi
 
 - **About:** Information about my experience, education, and skills.
 - **Projects:** A showcase of the projects I've developed.
-
-### License
-
-This project is licensed under the <a href="https://mit-license.org" target="_blank">MIT License</a>.
