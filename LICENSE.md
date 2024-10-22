@@ -1,6 +1,6 @@
 # MIT License
 
-**Copyright © 2024 iker karkokli**
+**Copyright © 2024 [Iker Karkokli](https://github.com/iturriker)**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
