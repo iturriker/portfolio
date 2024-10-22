@@ -20,4 +20,4 @@ The goal of this portfolio is to showcase my experience in web development, desi
 
 ### License
 
-This project is licensed under the [MIT License](https://mit-license.org/).
+This project is licensed under the <a href="https://mit-license.org" target="_blank">MIT License</a>.
