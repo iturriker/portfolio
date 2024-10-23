@@ -12,13 +12,20 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    align-content: stretch;
     margin: 0;
     padding: 0;
 }
 
 main {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,8 +94,11 @@ figure {
 .section-container-text-special {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     align-items: center;
+    align-content: stretch;
 }
 
 .section-container-list {
