@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="projects.css">
         <link rel="stylesheet" href="box-item.css">
         <link rel="stylesheet" href="../header.css">
+        <link rel="stylesheet" href="../burger-button.css">
         <link rel="stylesheet" href="../hero.css">
         <link rel="stylesheet" href="../footer.css">
     </head>
@@ -38,8 +39,11 @@
 			</nav>
 		</header>
 
-        <button id="header-button" class="header-button hidden" type="button">
-		</button>
+        <svg id="burger-button" class="burger-button hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <line id="line1" class="line1" x1="10" y1="25" x2="90" y2="25"/>
+            <line id="line2" class="line2" x1="10" y1="50" x2="90" y2="50"/>
+            <line id="line3" class="line3" x1="10" y1="75" x2="90" y2="75"/>
+        </svg>
 
         <main>
             <section id="hero-section" class="hero-section">
@@ -64,99 +68,34 @@
             <section id="web-section"  class="info-section">
                 <div class="section-container-text">
 					<h2><a class ="section-title" href="#hero-section">WEB</a></h2>
-                    <ul class="section-text-list box-list">
-                        <li class="text-list-item box-list-item">
+                    <ul class="box-list">
+                        <li class="box-list-item">
                             <div>
                                 <h3>The Greatest Composer</h3>
                                 <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
                             </div>
                             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0?si=EAaU8BJ5Gv3qmR-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </li>
-                        <li class="text-list-item box-list-item">
+                        <li class="box-list-item">
                             <div>
                                 <h3>Moth Tactics</h3>
                                 <p>Free your world from a violent moth infestation (currently in development).</p>
                             </div>
-                            <iframe scrolling="no" title="Move the Sun" src="https://codepen.io/Iker-Karkokli-Iturrioz/embed/QWepBYE?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                                See the Pen <a href="https://codepen.io/Iker-Karkokli-Iturrioz/pen/QWepBYE">
+                            <iframe scrolling="no" title="Move the Sun" src="https://codepen.io/Iker-Karkokli-Iturrioz/embed/wvVPOdd?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                See the Pen <a href="https://codepen.io/Iker-Karkokli-Iturrioz/pen/wvVPOdd">
                                 Move the Sun</a> by Iker Karkokli Iturrioz (<a href="https://codepen.io/Iker-Karkokli-Iturrioz">@Iker-Karkokli-Iturrioz</a>)
                                 on <a href="https://codepen.io">CodePen</a>.</iframe>
                         </li>
-                        <li class="text-list-item box-list-item">
+                        <li class="box-list-item">
                             <div>
                                 <h3>Moth Tactics</h3>
                                 <p>Free your world from a violent moth infestation (currently in development).</p>
                             </div>
-                            <img src="../Imagenes/Pajaros/2.jpg" alt="Descripción de la imagen">
-                        </li>
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/2.jpg" alt="Descripción de la imagen">
-                        </li>
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>The Greatest Composer</h3>
-                                <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/1.jpg" alt="Descripción de la imagen">
-                        </li>
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/2.jpg" alt="Descripción de la imagen">
-                        </li>
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/2.jpg" alt="Descripción de la imagen">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="PowerBI-section"  class="info-section">
-                <div class="section-container-text">
-					<h2><a class ="section-title" href="#hero-section">POWER BI</a></h2>
-                    <ul class="section-text-list box-list">
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>The Greatest Composer</h3>
-                                <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/1.jpg" alt="Descripción de la imagen">
-                        </li>
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/2.jpg" alt="Descripción de la imagen">
-                        </li>                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>The Greatest Composer</h3>
-                                <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/1.jpg" alt="Descripción de la imagen">
-                        </li>
-                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/2.jpg" alt="Descripción de la imagen">
-                        </li>                        <li class="text-list-item box-list-item">
-                            <div>
-                                <h3>The Greatest Composer</h3>
-                                <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
-                            </div>
-                            <img src="../Imagenes/Pajaros/1.jpg" alt="Descripción de la imagen">
+                            <iframe scrolling="no" title="Burger Button" src="https://codepen.io/Iker-Karkokli-Iturrioz/embed/KKOyPXW?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                See the Pen <a href="https://codepen.io/Iker-Karkokli-Iturrioz/pen/KKOyPXW">
+                                Burger Button</a> by Iker Karkokli Iturrioz (<a href="https://codepen.io/Iker-Karkokli-Iturrioz">@Iker-Karkokli-Iturrioz</a>)
+                                on <a href="https://codepen.io">CodePen</a>.
+                              </iframe>
                         </li>
                     </ul>
                 </div>

@@ -1,46 +1,47 @@
-// FOOTER AUTODATE
+// FOOTER
 function getYear() {
     var currentYear = new Date().getFullYear();
     document.getElementById('year').textContent = currentYear;
 }
 
-// HEADER HIDE
-
+// HEADER & BURGER BUTTON
 var scrollValue = 0
+var burgerButton = document.getElementById("burger-button");
+var header = document.getElementById("header");
 
 function handleHeaderScroll() {
     if (document.documentElement.scrollTop > 0)
         {
-            document.getElementById('header').classList.add("hidden");
-            document.getElementById('header-button').classList.remove("hidden");
+            header.classList.add("hidden");
+            burgerButton.classList.remove("hidden");
         }
     else
         {
-            document.getElementById('header').classList.remove("hidden");
-            document.getElementById('header-button').classList.add("hidden");
+            header.classList.remove("hidden");
+            burgerButton.classList.add("hidden");
         }
     
-    document.getElementById('header-button').classList.remove("clicked");
-    document.getElementById('header').classList.remove("opaque");
+        burgerButton.classList.remove("active");
+    header.classList.remove("opaque");
     scrollValue = document.documentElement.scrollTop; // Actualizamos el valor almacenado al actual
 }
 
-function handleHeaderButtonClick() {
-    if (document.getElementById('header-button').classList.contains("clicked"))
+function handleBurgerButtonClick() {
+    if (burgerButton.classList.contains("active"))
         {
-            document.getElementById('header-button').classList.remove("clicked");
-            document.getElementById('header').classList.add("hidden");
-            document.getElementById('header').classList.remove("opaque");
+            burgerButton.classList.remove("active");
+            header.classList.add("hidden");
+            header.classList.remove("opaque");
         }
     else
         {
-            document.getElementById('header-button').classList.add("clicked");
-            document.getElementById('header').classList.remove("hidden");
-            document.getElementById('header').classList.add("opaque");
+            burgerButton.classList.add("active");
+            header.classList.remove("hidden");
+            header.classList.add("opaque");
         }
 }
 
+// EVENTS
 window.addEventListener('load', getYear);
 window.addEventListener('scroll', handleHeaderScroll);
-document.getElementById('header-button').addEventListener('click', handleHeaderButtonClick);
-document.getElementById('header-button').classList.add("hidden");
+burgerButton.addEventListener('click', handleBurgerButtonClick);

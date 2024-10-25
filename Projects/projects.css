@@ -11,6 +11,10 @@ html {
     transition: all 0.5 ease;
 }
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -24,11 +28,6 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
 }
 
 .link-list {
@@ -80,42 +79,6 @@ figure {
 }
 
 .info-section {
-    margin-left: 10dvw;
-    margin-right: 10dvw;
-}
-
-.section-container-text-special {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-container-list {
-    margin-left: 5dvw;
-    margin-right: 5dvw;
-}
-
-.section-text-list {
-    list-style: none; /* Quita los puntos de la lista */
-    padding: 0;
-}
-
-.section-container-list h3 {
-    color: blue;
-}
-
-.text-list-item:hover strong{
-    background-position-x: 100%;
-}
-
-strong {
-    margin: auto;
-    background: linear-gradient(45deg, #000000 40%, #c6dc4c 100%);
-    background-clip: text;
-    background-size: 300%;
-    background-position-x: 0%;
-    background-repeat: repeat;
-    color: transparent;
-    transition: background-position 0.3s ease;
+    padding-left: 10dvw;
+    padding-right: 10dvw;
 }

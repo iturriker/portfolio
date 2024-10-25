@@ -23,6 +23,7 @@
 		<!--<link rel="stylesheet" href="reset.css">-->
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="burger-button.css">
 		<link rel="stylesheet" href="hero.css">
 		<link rel="stylesheet" href="footer.css">
 	</head>
@@ -40,8 +41,11 @@
 			</nav>
 		</header>
 
-		<button id="header-button" class="header-button hidden" type="button">
-		</button>
+		<svg id="burger-button" class="burger-button hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+			<line id="line1" class="line1" x1="10" y1="25" x2="90" y2="25"/>
+			<line id="line2" class="line2" x1="10" y1="50" x2="90" y2="50"/>
+			<line id="line3" class="line3" x1="10" y1="75" x2="90" y2="75"/>
+		</svg>
 
 		<main>
 			<section id="hero-section" class="hero-section">
@@ -150,6 +154,5 @@
 		</footer>
 	
 		<script src="index.js"></script>
-		<script src="image-gallery.js"></script>
 	</body>
 </html>

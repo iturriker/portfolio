@@ -11,6 +11,10 @@ html {
     transition: all 0.5 ease;
 }
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
     box-sizing: border-box;
     display: flex;
@@ -31,11 +35,6 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
 }
 
 .link-list {
@@ -87,8 +86,8 @@ figure {
 }
 
 .info-section {
-    margin-left: 10dvw;
-    margin-right: 10dvw;
+    padding-left: 10dvw;
+    padding-right: 10dvw;
 }
 
 .section-container-text-special {
@@ -102,8 +101,8 @@ figure {
 }
 
 .section-container-list {
-    margin-left: 5dvw;
-    margin-right: 5dvw;
+    padding-left: 5dvw;
+    padding-right: 5dvw;
 }
 
 .section-text-list {
