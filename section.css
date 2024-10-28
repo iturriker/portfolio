@@ -1,0 +1,55 @@
+section {
+    padding: 10px;
+}
+
+.section-title {
+    padding: 10px;
+}
+
+.section-paragraph {
+    padding: 10px;
+}
+
+.section-link {
+    text-decoration: none; /* Quita el subrayado */
+    background: linear-gradient(45deg, #0233d1 12.5%, #00f7ff 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
+    background-clip: text;
+    background-size: 200%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    color: transparent;
+    transition: background-position 0.5s ease;
+}
+
+.section-link:hover, .section-link:focus {
+    background-position-x: 100%;
+}
+
+.section-special-container-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-special-container-list {
+    padding: 10px;
+}
+
+.section-special-container-list h3 {
+    color: blue;
+    padding: 10px;
+}
+
+.section-text-list {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 10px;
+}
+
+.section-text-list-item:hover strong{
+    background-position-x: 100%;
+}

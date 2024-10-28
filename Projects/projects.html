@@ -21,12 +21,16 @@
 		<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
         <!--<link rel="stylesheet" href="../reset.css">-->
-		<link rel="stylesheet" href="projects.css">
-        <link rel="stylesheet" href="box-item.css">
+        <link rel="stylesheet" href="../common.css">
         <link rel="stylesheet" href="../header.css">
         <link rel="stylesheet" href="../burger-button.css">
         <link rel="stylesheet" href="../hero.css">
         <link rel="stylesheet" href="../footer.css">
+
+        <link rel="stylesheet" href="../section.css">
+        <link rel="stylesheet" href="../link-nav.css">
+
+        <link rel="stylesheet" href="vignette.css">
     </head>
 
     <body>
@@ -35,6 +39,7 @@
 				<ul class="header-list">
 					<li class="header-list-item"><a href="../index.html">KARKO</a></li>
 					<li class="header-list-item"><a href="projects.html">PROJECTS</a></li>
+                    <li class="header-list-item"><a href="../About/about.html">ABOUT</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -45,18 +50,18 @@
             <line id="line3" class="line3" x1="10" y1="75" x2="90" y2="75"/>
         </svg>
 
-        <main>
-            <section id="hero-section" class="hero-section">
-				<div class="hero-container-video">
-					<video class="hero-video" autoplay playsinline loop muted src="../Videos/Hierba.mp4"></video>
-				</div>
-				<div class="hero-container-text">
-					<h1 class="hero-text hero-title">PROJECTS</h1>
-					<h2 class="hero-text hero-subtitle">Self taught developer currently learning web development</h2>
-				</div>
-			</section>
+        <div id="hero-container" class="hero-container">
+            <div class="hero-container-video">
+                <video class="hero-video" autoplay playsinline loop muted src="../Videos/Hierba.mp4"></video>
+            </div>
+            <div class="hero-container-text">
+                <h1 class="hero-text hero-title">PROJECTS</h1>
+                <h2 class="hero-text hero-subtitle">Self taught developer currently learning web development</h2>
+            </div>
+        </div>
 
-            <nav>
+        <main>
+            <nav id="link-nav" class="link-nav">
                 <ul class="link-list">
                     <li class="link-list-item"><a href="#web-section">WEB</a></li>
                     <li class="link-list-item"><a href="#videogames-section">VIDEOGAMES</a></li>
@@ -65,37 +70,54 @@
                 </ul>
             </nav>
 
-            <section id="web-section"  class="info-section">
+            <section id="web-section">
                 <div class="section-container-text">
-					<h2><a class ="section-title" href="#hero-section">WEB</a></h2>
-                    <ul class="box-list">
-                        <li class="box-list-item">
+					<h2 class="section-title"><a class ="section-link" href="#hero-container">WEB</a></h2>
+                    <ul class="vignette-list">
+                        <li class="vignette-list-item">
                             <div>
-                                <h3>The Greatest Composer</h3>
-                                <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
-                            </div>
-                            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0?si=EAaU8BJ5Gv3qmR-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </li>
-                        <li class="box-list-item">
-                            <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
+                                <h3 class="vignette-item-title">Move The Sun</h3>
+                                <p class="vignette-item-paragraph">Behold how the sky transforms as the sun reaches the horizon.</p>
                             </div>
                             <iframe scrolling="no" title="Move the Sun" src="https://codepen.io/Iker-Karkokli-Iturrioz/embed/wvVPOdd?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                                 See the Pen <a href="https://codepen.io/Iker-Karkokli-Iturrioz/pen/wvVPOdd">
                                 Move the Sun</a> by Iker Karkokli Iturrioz (<a href="https://codepen.io/Iker-Karkokli-Iturrioz">@Iker-Karkokli-Iturrioz</a>)
                                 on <a href="https://codepen.io">CodePen</a>.</iframe>
                         </li>
-                        <li class="box-list-item">
+                        <li class="vignette-list-item">
                             <div>
-                                <h3>Moth Tactics</h3>
-                                <p>Free your world from a violent moth infestation (currently in development).</p>
+                                <h3 class="vignette-item-title">SVG Burger Button</h3>
+                                <p class="vignette-item-paragraph">Smooth and fully customizable SVG burger button with seamless transitions.</p>
                             </div>
                             <iframe scrolling="no" title="Burger Button" src="https://codepen.io/Iker-Karkokli-Iturrioz/embed/KKOyPXW?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                                 See the Pen <a href="https://codepen.io/Iker-Karkokli-Iturrioz/pen/KKOyPXW">
                                 Burger Button</a> by Iker Karkokli Iturrioz (<a href="https://codepen.io/Iker-Karkokli-Iturrioz">@Iker-Karkokli-Iturrioz</a>)
                                 on <a href="https://codepen.io">CodePen</a>.
                               </iframe>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="videogames-section">
+                <div class="section-container-text">
+					<h2 class="section-title"><a class ="section-link" href="#hero-container">VIDEOGAMES</a></h2>
+                    <ul class="vignette-list">
+                        <li class="vignette-list-item">
+                            <div>
+                                <h3 class="vignette-item-title">The Greatest Composer</h3>
+                                <p class="vignette-item-paragraph">Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
+                            </div>
+                            <a class="vignette-link" href="https://ttshhh.itch.io/the-greatest-composer" target="_blank" rel="noopener noreferrer">
+                                <img class="vignette-link-image" src="https://raw.githubusercontent.com/iturriker/portfolio/refs/heads/main/Imagenes/Pajaros/1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="vignette-list-item">
+                            <div>
+                                <h3 class="vignette-item-title">Moth Tactics</h3>
+                                <p class="vignette-item-paragraph">Free your world from a violent moth infestation (currently in development).</p>
+                            </div>
+                            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0?si=EAaU8BJ5Gv3qmR-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </li>
                     </ul>
                 </div>

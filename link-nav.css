@@ -1,0 +1,35 @@
+.link-nav {
+    padding: 10px;
+}
+
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none; /* Quita los puntos de la lista */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.link-list-item {
+    font-weight: bold;
+    transition: scale 0.3s ease;
+}
+
+.link-list-item a {
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s ease;
+}
+
+.link-list-item:hover, .link-list-item:focus {
+    scale: 1.15;
+}
+
+.link-list-item a:hover, .link-list-item a:focus {
+    color: rgb(166, 238, 32);
+}

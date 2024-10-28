@@ -1,0 +1,48 @@
+.grid-list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-list-item:nth-child(even) .grid-list-img{
+    order: -1;
+}
+
+.grid-list-text {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.grid-list-text h3 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 3%;
+}
+
+.grid-list-text p {
+    margin: 0;
+    padding: 3%;
+}
+
+.grid-list-img {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.grid-list-img img {
+    width: 100%;
+}

@@ -1,0 +1,52 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(219, 238, 255);
+    font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: larger;
+    cursor: default;
+    transition: all 0.5 ease;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    align-content: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+strong {
+    margin: auto;
+    background: linear-gradient(45deg, #000000 40%, #c6dc4c 100%);
+    background-clip: text;
+    background-size: 300%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    color: transparent;
+    transition: background-position 0.3s ease;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
