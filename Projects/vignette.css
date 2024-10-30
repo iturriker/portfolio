@@ -26,38 +26,47 @@
     min-width: 300px;
 }
 
-.vignette-list-item div{
+.vignette-item-text {
     display: inline-block;
-    padding: 10px;
-}
-
-.vignette-item-title {
-    padding: 10px;
-}
-
-.vignette-item-paragraph {
-    padding: 10px;
-}
-
-.vignette-link {
-    display: flex;
-}
-
-.vignette-link-image {
     width: 100%;
-    align-self: flex-end;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
+    padding: 10px;
 }
 
-.vignette-list-item iframe {
+.vignette-item-text > h3 {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.vignette-item-text > p {
+    padding: 10px;
+}
+
+.vignette-item-content {
+    display: flex;
+    align-self: flex-end;
     width: 100%;
     height: 250px;
-    align-self: flex-end;
+}
+
+.vignette-item-content > a {
+    display: flex;
+    width: 100%;
+}
+
+.vignette-item-content > a > img {
+    width: 100%;
+    object-fit: cover;
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
 }
 
-.vignette-list-item iframe:fullscreen {
+.vignette-item-content > iframe {
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.vignette-item-content > iframe:fullscreen {
     border-radius: 0;
 }
