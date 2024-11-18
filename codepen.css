@@ -1,0 +1,18 @@
+/* CodePen HTML embed style*/
+.codepen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cp_embed_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.cp_embed_iframe {
+    height: 100%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
