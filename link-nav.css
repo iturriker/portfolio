@@ -26,10 +26,6 @@
     transition: color 0.3s ease;
 }
 
-.link-list-item:hover, .link-list-item:focus {
-    scale: 1.15;
-}
-
 .link-list-item a:hover, .link-list-item a:focus {
     color: rgb(166, 238, 32);
 }

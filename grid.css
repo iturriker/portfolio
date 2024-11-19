@@ -9,7 +9,6 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .grid-list-item:nth-child(even) .grid-list-img{
@@ -17,7 +16,6 @@
 }
 
 .grid-list-text {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,23 +24,23 @@
     padding: 3%;
 }
 
-.grid-list-text h3 {
+.grid-list-text > h3 {
     font-size: xx-large;
     text-transform: uppercase;
     margin: 0;
     padding: 3%;
 }
 
-.grid-list-text p {
+.grid-list-text > ul {
+    text-align: left;
     margin: 0;
     padding: 3%;
 }
 
 .grid-list-img {
-    box-sizing: border-box;
     display: flex;
 }
 
-.grid-list-img img {
+.grid-list-img > img {
     width: 100%;
 }

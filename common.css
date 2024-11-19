@@ -46,6 +46,15 @@ strong {
     transition: background-position 0.3s ease;
 }
 
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+a {
+    color: rgb(0, 102, 204);
+    text-decoration: none; /* Quita el subrayado */
+}
+
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
