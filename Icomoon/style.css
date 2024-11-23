@@ -9,8 +9,8 @@
   font-display: block;
 }
 
-[class^="icon-"]:after, [class*=" icon-"]:after {
-  speak: never;
+[class^="icon-"]::after, [class*=" icon-"]::after {
+  /*speak: never;*/
   font-family: 'icomoon' !important; /* use !important to prevent issues with browser extensions that change fonts */
   font-variant: normal;
   text-transform: none;
@@ -21,12 +21,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:after {
+.icon-arrow-up::after {
   content: " \ea3b";
 }
-.icon-arrow-right:after {
+.icon-arrow-right::after {
   content: " \ea3c";
 }
-.icon-arrow-left:after {
+.icon-arrow-left::after {
   content: " \ea40";
 }
