@@ -1,8 +1,9 @@
 # Iker Karkokli Portfolio
 
-Welcome to my portfolio.
-Here you will find a collection of my work and projects, along with information about me and my skills.
-The goal of this portfolio is to showcase my experience in web development, design, UI/UX, game development, business management, analytics.
+**Welcome to my portfolio!😃**
+
+Here you will find a collection of my work and projects 📘, along with information about me and my skills 🏅.
+The goal of this portfolio is to showcase my experience in web development, design, UI/UX, game development, business management and analytics.
 
 ## Features
 
