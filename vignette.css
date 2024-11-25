@@ -48,6 +48,13 @@
     height: 250px;
 }
 
+.vignette-item-content > p {
+    align-self: center;
+    width: 100%;
+    padding: 20px;
+    color: rgb(96, 105, 110);
+}
+
 .vignette-item-content > a {
     display: flex;
     width: 100%;
