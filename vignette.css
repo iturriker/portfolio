@@ -21,7 +21,7 @@
     align-content: stretch;
     text-align: center;
     box-shadow: inset 0px 0px 40px rgb(45, 175, 236, 0.85);
-    border-radius: 2%;
+    border-radius: 10px;
     width: 30%;
     min-width: 300px;
 }
@@ -63,15 +63,6 @@
 .vignette-item-content > a > img {
     width: 100%;
     object-fit: cover;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
-}
-
-.vignette-item-content > iframe {
-    width: 100%;
-    object-fit: cover;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
 }
 
 .vignette-item-content > iframe:fullscreen {

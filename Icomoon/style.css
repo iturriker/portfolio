@@ -20,6 +20,8 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 .icon-spinner::before {
@@ -43,9 +45,16 @@
 .icon-arrow-up::after {
   content: " \ea3b";
 }
-.icon-arrow-right::after {
-  content: " \ea3c";
-}
 .icon-arrow-left::after {
   content: " \ea40";
+}
+
+.icon-arrow-right::after {
+  content: " \ea3c";
+  color: rgb(166, 238, 32);
+  font-size: 0rem;
+  vertical-align: middle;
+}
+.icon-arrow-right:hover::after {
+  font-size: 1.5rem;
 }
