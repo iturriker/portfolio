@@ -21,7 +21,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  transition: color 0.3s ease, font-size 0.3s ease;
+  transition: color 0.3s linear, font-size 0.3s linear;
 }
 
 .icon-spinner::before {
@@ -29,12 +29,14 @@
   background: radial-gradient(rgba(199,199,29,1) 50%, rgba(12,236,90,1) 100%);
   background-clip: text;
   color: transparent;
+  vertical-align: middle;
 }
 .icon-spinner::after {
   content: " \e982";
   background: radial-gradient(rgba(199,199,29,1) 50%, rgba(12,236,90,1) 100%);
   background-clip: text;
   color: transparent;
+  vertical-align: middle;
 }
 .icon-confused::before {
   content: "\e9f5 ";

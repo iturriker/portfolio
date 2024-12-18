@@ -1,0 +1,70 @@
+.intro-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-list-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(215px + 25%), 1fr)); /* 215 + (width * 0.25) */
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.intro-list-item:nth-child(even) img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.intro-list-item h3 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3%;
+}
+
+.intro-list-item h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 3%;
+    color: blue;
+}
+
+.intro-list-item ul {
+    text-align: left;
+    padding: 3%;
+}
+
+.intro-list-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro-list-item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.intro-list-item-wrap > div {
+    text-align: center;
+}
+
+.intro-list-item-wrap > div > h3 {
+    color: rgb(0, 132, 255);
+}
+
+.intro-list-item-list {
+    text-align: center;
+}
+
+.intro-list-item-list > li {
+    text-align: center;
+}
+
+.intro-list-item-list > li:hover strong{
+    background-position-x: 100%;
+}

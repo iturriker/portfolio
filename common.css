@@ -1,3 +1,11 @@
+:root {
+    font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -5,34 +13,12 @@
 html {
     scroll-behavior: smooth;
     background-color: rgb(219, 238, 255);
-    font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: larger;
     cursor: default;
-    transition: all 0.5 ease;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    text-align: center;
-    align-items: center;
-    align-content: stretch;
+body, header, main, footer, div {
     margin: 0;
     padding: 0;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
 }
 
 strong {
@@ -48,9 +34,12 @@ strong {
 
 ul {
     list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
 }
 
 a {
+    display: block;
     color: rgb(0, 102, 204);
     text-decoration: none; /* Quita el subrayado */
 }
@@ -62,4 +51,27 @@ img {
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.lat-pad {
+    padding-left: clamp(5px, 5%, 150px);
+    padding-right: clamp(5px, 5%, 150px);
+}
+
+.long-pad {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

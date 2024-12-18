@@ -1,31 +1,18 @@
-.link-nav {
-    padding: 10px;
-}
-
 .link-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    list-style: none; /* Quita los puntos de la lista */
     justify-content: center;
-    text-align: center;
-    align-items: center;
     text-wrap: nowrap;
     gap: 30px;
-    margin: 0;
-    padding: 0;
 }
 
-.link-list-item {
-    font-weight: bold;
-    transition: scale 0.3s ease;
-}
-
-.link-list-item a {
-    text-decoration: none; /* Quita el subrayado */
+.link-list > li > a {
+    font-size: 1.4rem;
+    font-weight: 700;
     transition: color 0.3s ease;
 }
 
-.link-list-item a:hover, .link-list-item a:focus {
+.link-list > li > a:hover,
+.link-list > li > a:focus {
     color: rgb(166, 238, 32);
 }

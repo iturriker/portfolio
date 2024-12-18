@@ -1,6 +1,5 @@
 header {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     text-align: center;
@@ -39,7 +38,6 @@ header.opaque {
 
 .header-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -50,16 +48,17 @@ header.opaque {
     gap: 20px;
 }
 
-.header-list-item {
+.header-list > li {
     font-weight: bold;
     transition: scale 0.3s ease;
 }
 
-.header-list-item a {
+.header-list > li > a {
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
-.header-list-item a:hover, .header-list-item a:focus{
+.header-list > li > a:hover,
+.header-list > li > a:focus{
     color: rgb(166, 238, 32);
 }

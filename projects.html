@@ -27,21 +27,19 @@
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="burger-button.css">
         <link rel="stylesheet" href="hero.css">
-        <link rel="stylesheet" href="footer.css">
-
         <link rel="stylesheet" href="section.css">
         <link rel="stylesheet" href="link-nav.css">
-
         <link rel="stylesheet" href="vignette.css">
         <link rel="stylesheet" href="codepen.css">
+        <link rel="stylesheet" href="footer.css">
     </head>
 
     <body>
 		<header id="header">
-			<nav>
+			<nav class="header-nav">
 				<ul class="header-list">
-					<li class="header-list-item"><a href="index.html">KARKO</a></li>
-					<li class="header-list-item"><a href="projects.html">PROJECTS</a></li>
+					<li><a href="index.html">KARKO</a></li>
+					<li><a href="projects.html">PROJECTS</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -62,114 +60,109 @@
             </div>
         </div>
 
-        <main>
-            <nav id="link-nav" class="link-nav">
+        <main class="lat-pad long-pad">
+            <nav>
                 <ul class="link-list">
-                    <li class="link-list-item"><a href="#web-section">WEB</a></li>
-                    <li class="link-list-item"><a href="#videogames-section">VIDEOGAMES</a></li>
+                    <li><a href="#web">WEB</a></li>
+                    <li><a href="#videogames">VIDEOGAMES</a></li>
                 </ul>
             </nav>
 
-            <section id="web-section">
-                <div class="section-container-text">
-					<h2 class="section-title"><a class ="section-link" href="#hero-container">WEB</a></h2>
-                    <ul class="vignette-list">
-                        <li class="vignette-list-item">
-                            <div class="vignette-item-text">
-                                <h3><a href="https://codepen.io/iturriker/pen/wvVPOdd" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Move The Sun</a></h3>
-                                <p>Behold how the sky transforms as the sun reaches the horizon.</p>
-                            </div>
-                            <div class="vignette-item-content">
-                                <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="wvVPOdd" data-pen-title="Move the Sun" data-user="iturriker">
-                                    <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/wvVPOdd">
-                                    Move the Sun</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="vignette-list-item">
-                            <div class="vignette-item-text">
-                                <h3><a href="https://codepen.io/iturriker/pen/vYobYXo" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Race Controller</a></h3>
-                                <p>Set the Min and Max speed to see the changes on this racing simulator.</p>
-                            </div>
-                            <div class="vignette-item-content">
-                                <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="vYobYXo" data-pen-title="Race Controller" data-user="iturriker">
-                                    <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/vYobYXo">
-                                    Race Controller</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="vignette-list-item">
-                            <div class="vignette-item-text">
-                                <h3><a href="https://codepen.io/iturriker/pen/vEBBJdz" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Item Selector</a></h3>
-                                <p>Click items to expand the information</p>
-                            </div>
-                            <div class="vignette-item-content">
-                                <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="QwLLaGe" data-pen-title="Item Selector" data-user="iturriker">
-                                    <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/QwLLaGe">
-                                    Item Selector</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                                  </p>
-                            </div>
-                        </li>
-                        <li class="vignette-list-item">
-                            <div class="vignette-item-text">
-                                <h3><a href="https://codepen.io/iturriker/pen/KKOyPXW" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">SVG Burger Button</a></h3>
-                                <p>Smooth and fully customizable SVG burger button with seamless transitions.</p>
-                            </div>
-                            <div class="vignette-item-content">
-                                <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="KKOyPXW" data-pen-title="Burger Button" data-user="iturriker">
-                                    <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/KKOyPXW">
-                                    Burger Button</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <section id="web" class="vignette">
+                <h2 class ="vignette-title"><a href="#hero-container">WEB</a></h2>
+                <ul class="vignette-list">
+                    <li class="vignette-list-item">
+                        <div class="vignette-item-text">
+                            <h3><a href="https://codepen.io/iturriker/pen/wvVPOdd" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Move The Sun</a></h3>
+                            <p>Behold how the sky transforms as the sun reaches the horizon.</p>
+                        </div>
+                        <div class="vignette-item-content">
+                            <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="wvVPOdd" data-pen-title="Move the Sun" data-user="iturriker">
+                                <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/wvVPOdd">
+                                Move the Sun</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="vignette-list-item">
+                        <div class="vignette-item-text">
+                            <h3><a href="https://codepen.io/iturriker/pen/vYobYXo" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Race Controller</a></h3>
+                            <p>Set the Min and Max speed to see the changes on this racing simulator.</p>
+                        </div>
+                        <div class="vignette-item-content">
+                            <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="vYobYXo" data-pen-title="Race Controller" data-user="iturriker">
+                                <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/vYobYXo">
+                                Race Controller</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="vignette-list-item">
+                        <div class="vignette-item-text">
+                            <h3><a href="https://codepen.io/iturriker/pen/vEBBJdz" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Item Selector</a></h3>
+                            <p>Click items to expand the information</p>
+                        </div>
+                        <div class="vignette-item-content">
+                            <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="QwLLaGe" data-pen-title="Item Selector" data-user="iturriker">
+                                <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/QwLLaGe">
+                                Item Selector</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="vignette-list-item">
+                        <div class="vignette-item-text">
+                            <h3><a href="https://codepen.io/iturriker/pen/KKOyPXW" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">SVG Burger Button</a></h3>
+                            <p>Smooth and fully customizable SVG burger button with seamless transitions.</p>
+                        </div>
+                        <div class="vignette-item-content">
+                            <p class="codepen" data-theme-id="41" data-animations="run" data-zoom="0.5" data-border="none" data-default-tab="result" data-slug-hash="KKOyPXW" data-pen-title="Burger Button" data-user="iturriker">
+                                <span class="icon-confused">Something went wrong while loading. See the Pen <a href="https://codepen.io/iturriker/pen/KKOyPXW">
+                                Burger Button</a> by Iker Karkokli (<a href="https://codepen.io/iturriker">@iturriker</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
-            <section id="videogames-section">
-                <div class="section-container-text">
-					<h2 class="section-title"><a class ="section-link" href="#hero-container">VIDEOGAMES</a></h2>
-                    <ul class="vignette-list">
-                        <li class="vignette-list-item">
-                            <div class="vignette-item-text">
-                                <h3><a href="https://ttshhh.itch.io/the-greatest-composer" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">The Greatest Composer</a></h3>
-                                <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
-                            </div>
-                            <div class="vignette-item-content">
-                                <a href="https://ttshhh.itch.io/the-greatest-composer" target="_blank" rel="noopener noreferrer">
-                                    <img src="https://img.itch.zone/aW1nLzE3MDEwOTE2LmpwZw==/original/vXjfv%2F.jpg" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="vignette-list-item">
-                            <div class="vignette-item-text">
-                                <h3><a href="#" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Moth Tactics</a></h3>
-                                <p>Free your world from a violent moth infestation.</p>
-                            </div>
-                            <div class="vignette-item-content">
-                                <p class="icon-spinner">Project currently under development, no media available yet</p>
-                                <!--<iframe src="https://www.youtube.com/embed/JkaxUblCGz0?si=EAaU8BJ5Gv3qmR-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <section id="videogames" class="vignette">
+                <h2 class ="vignette-title"><a href="#hero-container">VIDEOGAMES</a></h2>
+                <ul class="vignette-list">
+                    <li class="vignette-list-item">
+                        <div class="vignette-item-text">
+                            <h3><a href="https://ttshhh.itch.io/the-greatest-composer" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">The Greatest Composer</a></h3>
+                            <p>Step into the shoes of a police officer with a dream of becoming the greatest composer.</p>
+                        </div>
+                        <div class="vignette-item-content">
+                            <a href="https://ttshhh.itch.io/the-greatest-composer" target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.itch.zone/aW1nLzE3MDEwOTE2LmpwZw==/original/vXjfv%2F.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="vignette-list-item">
+                        <div class="vignette-item-text">
+                            <h3><a href="#" class="icon-arrow-right" target="_blank" rel="noopener noreferrer">Moth Tactics</a></h3>
+                            <p>Free your world from a violent moth infestation.</p>
+                        </div>
+                        <div class="vignette-item-content">
+                            <p class="icon-spinner">Project currently under development, no media available yet</p>
+                            <!--<iframe src="https://www.youtube.com/embed/JkaxUblCGz0?si=EAaU8BJ5Gv3qmR-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+                        </div>
+                    </li>
+                </ul>
             </section>
         </main>
 
-		<footer>
+		<footer class="lat-pad long-pad">
 			<ul class="social-list">
 				<li class="social-list-item"><a href="https://www.linkedin.com/in/iker-karkokli-iturrioz" target="_blank" rel="noopener noreferrer"><img src="Logos/linkedin.png" alt="Link to LinkedIn"></a></li>
 				<li class="social-list-item"><a href="https://github.com/iturriker" target="_blank" rel="noopener noreferrer"><img src="Logos/github.png" alt="Link to GitHub"></a></li>		
                 <li class="social-list-item"><a href="https://codepen.io/iturriker" target="_blank" rel="noopener noreferrer"><img src="https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png" alt="Link to CodePen"></a></li>
-                <li class="social-list-item"><a href="http://www.antxoa-dev.com/curso" target="_blank" rel="noopener noreferrer"><img src="Logos/bird.png" alt="Link to AntxoaDev"></a></li>
             </ul>
 			
 			<div class="license-container">
-				<p class ="license-text">&copy; <span id="year"></span> Iker Karkokli. MIT Lisence.</p>
+				<p>&copy; <span id="year"></span> Iker Karkokli. MIT Lisence.</p>
 			</div>
 		</footer>
         
