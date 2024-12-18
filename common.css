@@ -16,20 +16,9 @@ html {
     cursor: default;
 }
 
-body, header, main, footer, div {
+body, header, main, footer, div, strong {
     margin: 0;
     padding: 0;
-}
-
-strong {
-    margin: auto;
-    background: linear-gradient(45deg, #000000 40%, #c6dc4c 100%);
-    background-clip: text;
-    background-size: 300%;
-    background-position-x: 0%;
-    background-repeat: repeat;
-    color: transparent;
-    transition: background-position 0.3s ease;
 }
 
 ul {

@@ -58,13 +58,25 @@
 }
 
 .intro-list-item-list {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro-list-item-list > li {
     text-align: center;
 }
 
-.intro-list-item-list > li:hover strong{
+.intro-list-item-list > li > strong {
+    background: linear-gradient(45deg, #000000 40%, #c6dc4c 100%);
+    background-clip: text;
+    background-size: 300%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    color: transparent;
+    transition: background-position 0.3s ease;
+}
+
+.intro-list-item-list > li:hover strong {
     background-position-x: 100%;
 }

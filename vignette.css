@@ -1,7 +1,16 @@
 .vignette {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.vignette-title {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0px clamp(5px, 5%, 150px);
+    width: fit-content;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    background-color: black;
 }
 
 .vignette-title > a {
@@ -12,8 +21,6 @@
     background-repeat: repeat;
     color: transparent;
     font-size: 2rem;
-    margin: 10px 0;
-    padding: 10px;
     transition: background-position 0.5s ease;
 }
 
@@ -49,6 +56,8 @@
 }
 
 .vignette-item-text > h3 {
+    margin: 0 auto;
+    width: fit-content;
     font-size: 1.4rem;
     padding: 10px;
 }
