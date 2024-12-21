@@ -53,6 +53,7 @@
 
 .icon-arrow-right::after {
   content: " \ea3c";
+  text-wrap: nowrap;
   color: rgb(166, 238, 32);
   font-size: 0rem;
   vertical-align: middle;
