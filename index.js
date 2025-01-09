@@ -5,7 +5,6 @@ function getYear() {
 }
 
 // HEADER & BURGER BUTTON
-var scrollValue = 0
 var burgerButton = document.getElementById("burger-button");
 var header = document.getElementById("header");
 
@@ -23,7 +22,6 @@ function handleHeaderScroll() {
     
         burgerButton.classList.remove("active");
     header.classList.remove("opaque");
-    scrollValue = document.documentElement.scrollTop; // Actualizamos el valor almacenado al actual
 }
 
 function handleBurgerButtonClick() {
