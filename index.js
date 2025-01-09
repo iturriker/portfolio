@@ -20,7 +20,7 @@ function handleHeaderScroll() {
             burgerButton.classList.add("hidden");
         }
     
-        burgerButton.classList.remove("active");
+    burgerButton.classList.remove("active");
     header.classList.remove("opaque");
 }
 
