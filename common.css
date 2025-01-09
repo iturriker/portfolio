@@ -55,12 +55,22 @@ h1,h2,h3,h4,h5,h6,p {
     outline: none;
 }
 
-.lat-pad {
-    padding-left: clamp(5px, 5%, 150px);
-    padding-right: clamp(5px, 5%, 150px);
+.lat-pad-L {
+    padding-left: clamp(5px, 10%, 250px);
+    padding-right: clamp(5px, 10%, 250px);
 }
 
-.long-pad {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.lat-pad-S {
+    padding-left: clamp(5px, 3%, 250px);
+    padding-right: clamp(5px, 3%, 250px);
+}
+
+.long-pad-L {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.long-pad-S {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
