@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Baloo Paaji 2','Comfortaa','Dosis';
+    font-family: "Baloo Paaji 2", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5,h6,p {
 .visually-hidden {
     position: absolute;
     overflow: hidden;
-    clip: rect(0 0 0 0);
+    clip-path: inset(0);
     white-space: nowrap;
     width: 1px;
     height: 1px;

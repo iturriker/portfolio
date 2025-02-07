@@ -14,7 +14,7 @@
 
 .burger-button:hover {
     opacity: 1;
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 /*Add and Remove by JavaScript*/
@@ -44,16 +44,16 @@
 }
 
 .active .line1 {
-    transform: translate(0%, 25%) rotate(-45deg) scale(120%);
+    transform: translate(0%, 25%) rotate(-45deg) scale(1.2);
     stroke: red;
 }
 
 .active .line2 {
     opacity: 0;
-    transform: scale(0%);
+    transform: scale(0);
 }
 
 .active .line3 {
-    transform: translate(0%, -25%) rotate(45deg) scale(120%);
+    transform: translate(0%, -25%) rotate(45deg) scale(1.2);
     stroke: red;
 }

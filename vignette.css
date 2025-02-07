@@ -22,6 +22,7 @@
     background-position-x: 0%;
     background-repeat: repeat;
     color: transparent;
+    text-transform: uppercase;
     font-size: 2rem;
     padding: 0px clamp(25px, 5%, 150px);
     transition: background-position 0.5s ease;
