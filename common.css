@@ -1,3 +1,33 @@
+@property --blue-1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(219, 238, 255);
+}
+
+@property --blue-2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(175, 226, 255);
+}
+
+@property --blue-3 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgba(45, 175, 236, 0.85);
+}
+
+@property --blue-4 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(0, 102, 204);
+}
+
+@property --grey-1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(96, 105, 110);
+}
+
 :root {
     font-family: "Baloo Paaji 2", serif;
     font-optical-sizing: auto;
@@ -12,7 +42,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: rgb(219, 238, 255);
+    background-color: var(--blue-1);
     cursor: default;
 }
 
@@ -29,7 +59,7 @@ ul {
 
 a {
     display: block;
-    color: rgb(0, 102, 204);
+    color: var(--blue-4);
     text-decoration: none; /* Quita el subrayado */
 }
 

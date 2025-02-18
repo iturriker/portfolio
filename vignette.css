@@ -11,7 +11,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     text-align: center;
     min-width: fit-content;
-    background-color: rgb(175, 226, 255);
+    background-color: var(--blue-2);
     transition: width 0.3s ease, clip-path 0.3s ease, background 0.3s ease;
 }
 
@@ -48,7 +48,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    box-shadow: inset 0px 0px 40px rgb(45, 175, 236, 0.85);
+    box-shadow: inset 0px 0px 40px var(--blue-3);
     border-radius: 10px;
     width: 28%;
     min-width: 300px;
@@ -78,7 +78,7 @@
 
 .vignette-item-content > p {
     padding: 20px;
-    color: rgb(96, 105, 110);
+    color: var(--grey-1);
 }
 
 .vignette-item-content > a {
@@ -100,5 +100,5 @@
 .vignette .collapse {
     width: 0%; /* Esto sirve para que la transición con width funcione */
     clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0 100%);
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }

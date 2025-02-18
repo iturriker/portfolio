@@ -11,14 +11,14 @@ header {
     z-index: 100;
     border-bottom-left-radius: 80%;
     border-bottom-right-radius: 80%;
-    box-shadow: inset 0px 10px 40px rgb(45, 175, 236, 0.85), inset 0px -10px 40px rgb(45, 175, 236, 0.85);
+    box-shadow: inset 0px 10px 40px var(--blue-3), inset 0px -10px 40px var(--blue-3);
     transition: box-shadow 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 header:hover {
-    box-shadow: inset 0px 25px 40px rgb(45, 175, 236, 1),
-    inset 0px -25px 40px rgb(45, 175, 236, 1),
-    0px 10px 40px rgb(45, 175, 236, 0.85);
+    box-shadow: inset 0px 25px 40px var(--blue-3),
+    inset 0px -25px 40px var(--blue-3),
+    0px 10px 40px var(--blue-3);
 }
 
 /*Add and Remove by JavaScript*/
@@ -29,7 +29,7 @@ header.hidden {
 
 /*Add and Remove by JavaScript*/
 header.opaque {
-    background-color: rgb(45, 175, 236, 0.85);
+    background-color: var(--blue-3);
 }
 
 .header-nav {
