@@ -1,7 +1,7 @@
 @property --blue-1 {
     syntax: "<color>";
     inherits: true;
-    initial-value: rgb(219, 238, 255);
+    initial-value: rgb(231, 244, 255);
 }
 
 @property --blue-2 {
