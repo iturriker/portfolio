@@ -28,6 +28,12 @@
     initial-value: rgb(96, 105, 110);
 }
 
+@property --radius-1 {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 5px;
+}
+
 :root {
     font-family: "Baloo Paaji 2", serif;
     font-optical-sizing: auto;

@@ -1,0 +1,36 @@
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1dvw;
+}
+
+.tool-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.tool-item > img {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-width: 75px;
+}
+
+.tool-info {
+    display: flex;
+    flex-direction: column;
+    text-wrap: balance;
+}
+
+.tool-info :nth-child(1) {
+    font-weight: 700;
+}
+
+.tool-info :nth-child(2) {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
