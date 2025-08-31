@@ -4,6 +4,15 @@ footer {
     padding-bottom: 20px;
     gap: 20px;
 }
+
+.message-container {
+    background-color: white;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border-radius: 1rem;
+}
+
 .social-list {
     display: flex;
     flex-wrap: wrap;
@@ -30,5 +39,11 @@ footer {
 }
 
 .license-container {
-    text-align: center;
+    background-color: white;
+    width: fit-content;
+    align-self: center;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    color: var(--grey-1);
+    font-size: 0.9rem;
 }

@@ -55,7 +55,7 @@
 }
 
 .vignette-item-links > a {
-    color: rgb(166, 238, 32);
+    color: var(--hover-link);
     font-size: 0.9rem;
 }
 

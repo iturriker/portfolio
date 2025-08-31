@@ -42,11 +42,11 @@ header.opaque {
     font-weight: bold;
     background-color: white;
     border-radius: 1rem;
-    padding: 0px 15px;
+    padding: 0px 20px;
     transition: color 0.3s ease;
 }
 
 .header-list > li > a:hover,
 .header-list > li > a:focus{
-    color: rgb(166, 238, 32);
+    color: var(--hover-link);
 }

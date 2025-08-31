@@ -34,6 +34,12 @@
     initial-value: rgb(96, 105, 110);
 }
 
+@property --hover-link {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(152, 219, 29);
+}
+
 @property --radius-1 {
     syntax: "<length>";
     inherits: true;
