@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#62edffff"/>
+      <stop offset="50%" stop-color="#6edbffff"/>
+      <stop offset="100%" stop-color="#0066cc"/>
+    </linearGradient>
+
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#877641ff"/>
+      <stop offset="100%" stop-color="#c9e766ff"/>
+    </linearGradient>
+
+    <linearGradient id="fire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFEB3B"/>
+      <stop offset="50%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#F44336"/>
+    </linearGradient>
+
+    <linearGradient id="air" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0F7FA"/>
+      <stop offset="100%" stop-color="#98e7f1ff"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M0 175 C600 100, 1300 300, 1920 25" stroke="url(#water)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M0 250 C500 300, 1400 -100, 1920 175" stroke="url(#earth)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M0 100 C700 600, 1200 -200, 1920 250" stroke="url(#fire)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M0 25 C400 500, 1600 0, 1920 75" stroke="url(#air)" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

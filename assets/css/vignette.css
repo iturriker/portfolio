@@ -1,0 +1,98 @@
+.vignette-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.vignette-list-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: white;
+    border-radius: 1rem;
+    min-height: 200px;
+}
+
+.vignette-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px clamp(20px, 3dvw, 40px);
+    gap: 15px;
+}
+
+.vignette-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.vignette-item-info > ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.vignette-item-info > ul > li {
+    border-right: 2px solid;
+    border-radius: 1rem;
+    padding: 0px 10px 0px 0px;
+    color: var(--grey-1);
+    font-size: 0.9rem;
+    border-image: linear-gradient(0deg, #00f7ff 0%, #00ff4c 50%, #d9ff00 87.5%) 1;
+}
+
+.vignette-item-info > ul > li:last-child {
+    border-right: none;
+}
+
+.vignette-item-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    column-gap: 20px;
+}
+
+.vignette-item-links > a {
+    color: rgb(166, 238, 32);
+    font-size: 0.9rem;
+}
+
+.vignette-item-links > a:hover {
+    text-decoration: underline;
+}
+
+.vignette-item-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.vignette-item-media * {
+    border-radius: 1rem;
+}
+
+.vignette-item-media > p {
+    padding: 20px;
+    color: var(--grey-1);
+}
+
+.vignette-item-media > a {
+    display: flex;
+}
+
+.vignette-item-media > a > img {
+    /*aspect-ratio: 21 / 9;*/
+    object-fit: cover;
+}
+
+.vignette-item-media > iframe {
+    width: 100%;
+}
+
+.vignette-item-media > iframe:fullscreen {
+    border-radius: 0;
+}

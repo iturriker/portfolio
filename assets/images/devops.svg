@@ -1,0 +1,103 @@
+<svg height="500" viewBox="-20.21 56.72 333.89 177.33" width="1000" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .aux-line {
+            stroke: red;
+            stroke-width: 0;
+            fill: none;
+            stroke-dasharray: 4 2;
+        }
+        .green-text {
+            fill: #02d35f;
+            fill: transparent;
+            font-size: 0.8rem;
+            font-family: "Baloo Paaji 2", serif;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+        .black-text {
+            fill: #0d2c40;
+            fill: transparent;
+            font-size: 0.8rem;
+            font-family: "Baloo Paaji 2", serif;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+        .title {
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+    </style>
+    <g fill="#0d2c40">
+        <path d="m93.09 176.17 20.91 1.54v17.86s-39.07 38.48-96-7.08h19.4l2.15-17.55s22.14 22.47 53.54 5.23z"/>
+        <path id="1" class="aux-line" d="M37.40 188.49 C 82 212, 114.00 177.71, 114.00 177.71"/>
+        <text>
+            <textPath href="#1" class="green-text" startOffset="50%">
+                test
+            </textPath>
+        </text>
+
+        <path d="m22.28 93.66s-42.49 39.56-7.7 90.21l19.42 1.85 1.85-18.78s-17.85-29.25 5.21-52.34l-20.68-1.6z"/>
+        <path id="2" class="aux-line" d="M34.00 185.72 C 0 150, 20.38 113.00, 20.38 113.00"/>
+        <text>
+            <textPath href="#2" class="green-text" startOffset="50%">
+                build
+            </textPath>
+        </text>
+
+        <path d="m26.9 90.89s53-34.17 93.29 7.08l-17.86-1.23-1.85 20s-20.32-24.62-54.18-5.53l-20.63-.92z"/>
+        <path id="3" class="aux-line" d="M25.67 110.29 C 25.67 110.29, 60 74, 102.33 96.74"/>
+        <text>
+            <textPath href="#3" class="green-text" startOffset="50%">
+                code
+            </textPath>
+        </text>
+
+        <path d="m105.1 121.68 1.23-20.63 18.78 1.85 56.65 63.11h-19.39l-1.85 17.55z"/>
+        <path id="4" class="aux-line" d="M106.33 101.05 L162.37 166.01"/>
+        <text>
+            <textPath href="#4" class="green-text" startOffset="30%">
+                plan
+            </textPath>
+        </text>
+    </g>
+    <g fill="#02d35f">
+        <path d="m98.33 172.79 71.73-79.13 19.09 1.85-1.23 19.4-70.5 78.5.3-20.32z"/>
+        <path id="5" class="aux-line" d="M117.72 173.09 L189.15 95.51"/>
+        <text>
+            <textPath href="#5" class="black-text" startOffset="40%">
+                release
+            </textPath>
+        </text>
+
+        <path d="m172.83 90.81 19.86 1.62-1.38 18.94s29.32-18.71 50.8 1.15l21 .92 1.89-18.44s-32.82-37-92.17-4.19z"/>
+        <path id="6" class="aux-line" d="M192.69 92.43 C 192.69 92.43, 240.01 73.72, 263.11 113.44"/>
+        <text>
+            <textPath href="#6" class="black-text" startOffset="50%">
+                deploy
+            </textPath>
+        </text>
+
+        <path d="m245.11 115.52 21 1.23 1.62-18.55s45.95 51.19-3.7 95.21l-20.31-1.41 1.85-21s27.48-30.77-.46-55.48z"/>
+        <path id="7" class="aux-line" d="M266.11 116.75 C 266.11 116.75, 295.06 162.94, 243.72 192.00"/>
+        <text>
+            <textPath href="#7" class="black-text" startOffset="50%">
+                operate
+            </textPath>
+        </text>
+
+        <path d="m186.69 170.94-21.21-1.85-1.19 18.71s37.64 43.41 94.44 8.77l-19.4-1.57 1.85-20.09s-24.71 19.81-54.49-3.97z"/>
+        <path id="8" class="aux-line" d="M165.48 169.09 C 165.48 169.09, 185.99 205.90, 239.33 195.00"/>
+        <text>
+            <textPath href="#8" class="black-text" startOffset="50%">
+                monitor
+            </textPath>
+        </text>
+    </g>
+
+    <text x="70.71" y="145.385" class="green-text title">
+        Dev
+    </text>
+    <text x="210.71" y="145.385" class="black-text title">
+        Ops
+    </text>
+</svg>

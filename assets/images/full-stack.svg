@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="500" height="500">
+    <defs>
+        <radialGradient id="water-2" cx="50%" cy="40%" r="70%" fx="50%" fy="40%">
+        <stop offset="0%" stop-color="#62edffff"/>
+        <stop offset="50%" stop-color="#6edbffff"/>
+        <stop offset="100%" stop-color="#0066cc"/>
+        </radialGradient>
+        <radialGradient id="water-1" cx="50%" cy="40%" r="70%" fx="50%" fy="40%">
+        <stop offset="0%" stop-color="#6edbffff"/>
+        <stop offset="50%" stop-color="#16b5ff"/>
+        <stop offset="100%" stop-color="#0066cc"/>
+        </radialGradient>
+        <radialGradient id="water-3" cx="50%" cy="30%" r="70%" fx="50%" fy="40%">
+        <stop offset="0%" stop-color="#62edffff"/>
+        <stop offset="50%" stop-color="#6edbffff"/>
+        <stop offset="100%" stop-color="#16b5ff"/>
+        </radialGradient>
+
+        <path id="rombo" d="
+        M115,10
+        L175,45
+        A15,17 0 0 1 175,75
+        L115,110
+        A19,10 0 0 1 85,110
+        L25,75
+        A15,17 0 0 1 25,45
+        L85,10
+        A19,10 0 0 1 115,10
+        "/>
+    </defs>
+
+    <!-- Usos en línea vertical -->
+    <use href="#rombo" fill="url(#water-3)" x="0" y="60"/>
+    <use href="#rombo" fill="url(#water-2)" x="0" y="30"/>
+    <use href="#rombo" fill="url(#water-1)" x="0" y="0"/>
+</svg>

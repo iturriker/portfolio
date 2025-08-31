@@ -1,0 +1,212 @@
+@property --background {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(245, 249, 254);
+}
+
+@property --background-light {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(245, 249, 254, 0.5);
+}
+
+@property --blue-2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(175, 226, 255);
+}
+
+@property --blue-3 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgba(45, 175, 236, 0.85);
+}
+
+@property --link {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(0, 102, 204);
+}
+
+@property --grey-1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(96, 105, 110);
+}
+
+@property --radius-1 {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 5px;
+}
+
+/*GLOBAL*/
+:root {
+    font-family: "Baloo Paaji 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    cursor: default;
+}
+
+html, body, header, main, footer, div, strong, span, svg, ul, h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+a {
+    display: block;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+img {
+    max-width: 100%;
+}
+
+svg {
+    display: block;
+}
+
+/*SPECIFIC*/
+
+main {
+    display:flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1, h2, h3, h4 {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+h1, h2 {
+    background-color: white;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    padding: 0px clamp(20px, 2%, 30px);
+    transition: background 0.3s ease, border-radius 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: calc(1.5rem + 2dvw);
+}
+
+h2 {
+    font-size: calc(1.2rem + 1dvw);
+}
+
+h3 {
+    font-size: calc(1rem + 0.5dvw);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+    color: inherit;
+    font-size: inherit;
+}
+
+/*REUSABLE*/
+.h2-mask {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-width: max-content; /*necesario para que la máscara se ajuste al contenido */
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    transition: width 0.3s ease-in-out;
+}
+
+h2 > a {
+    background: linear-gradient(45deg, #0233d1 12.5%, #00f7ff 37.5%, #00ff4c 62.5%, #d9ff00 87.5%);
+    background-clip: text;
+    background-size: 200%;
+    background-position-x: 0%;
+    background-repeat: repeat;
+    color: transparent;
+    transition: background-position 0.5s ease;
+}
+
+h2 > a:hover, h2 > a:focus {
+    background-position-x: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip-path: inset(0);
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.lat-pad-L {
+    padding-left: clamp(5px, 10%, 250px);
+    padding-right: clamp(5px, 10%, 250px);
+}
+
+.lat-pad-S {
+    padding-left: clamp(5px, 3%, 250px);
+    padding-right: clamp(5px, 3%, 250px);
+}
+
+.long-pad-L {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.long-pad-S {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*JAVASCRIPT*/
+.h2-mask.collapse {
+    width: 0%; /*necesario para que la máscara se ajuste al contenido */
+}
+
+.h2-mask.collapse h2{
+    border-radius: 0px 0px 1rem 0px;
+}
