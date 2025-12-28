@@ -1,17 +1,13 @@
 .tools-list {
-    display: grid;
-    --columns: 4;
-    --min-column-width: 250px;
-    --gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(max(var(--min-column-width), calc(100%/var(--columns) - var(--gap))), 1fr));
-    gap: var(--gap);
-    justify-self: center;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .tools-list > li {
+    flex: 1 1 250px;
     display: flex;
-    width: fit-content;
     align-items: center;
     gap: 15px;
 }

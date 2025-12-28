@@ -1,0 +1,62 @@
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills-list > li {
+    position: relative;
+    flex: 0.75 1 max(250px, 45%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skills-list > li:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.skills-list > li > img {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+/* base para todos los after */
+.skills-list > li::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    margin-bottom: -5px;
+    height: 2px;
+    border-radius: 1rem;
+}
+
+/* variantes por elemento */
+.skills-list > li.devops::after {
+    background: linear-gradient(45deg,#1abc35 0%, #24612e 50%, #000000 100%);
+}
+
+.skills-list > li.fullstack::after {
+    background: linear-gradient(45deg, #3367b1 0%, #1ec3e1 100%);
+}
+
+.skills-info {
+    display: flex;
+    flex-direction: column;
+    text-wrap: balance;
+}
+
+.skills-info :nth-child(1) {
+    font-weight: 700;
+}
+
+.skills-info :nth-child(2) {
+    font-weight: 400;
+    font-size: 0.8rem;
+}

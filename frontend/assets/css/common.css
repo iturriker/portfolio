@@ -146,6 +146,7 @@ h4 a {
 /*REUSABLE*/
 .h2-mask {
     position: sticky;
+    z-index: 3;
     top: 0;
     width: 100%;
     min-width: max-content; /*necesario para que la máscara se ajuste al contenido */
